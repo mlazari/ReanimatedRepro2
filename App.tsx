@@ -16,6 +16,7 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
+import {Extrapolation} from 'react-native-reanimated';
 
 import {
   Colors,
@@ -76,6 +77,9 @@ function App(): JSX.Element {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
+          <Section title="Reanimated Extrapolation.CLAMP">
+            {Extrapolation.CLAMP}
+          </Section>
           <Section title="Step One">
             Edit <Text style={styles.highlight}>App.tsx</Text> to change this
             screen and then come back to see your edits.
